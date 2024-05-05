@@ -99,7 +99,7 @@
 
   <main>
     <article>
-      <section class="hero" id="home">
+      <section class="me" id="home">
         <div class="container">
 
           <p class="section-subtitle">
@@ -108,11 +108,11 @@
             <span>WE MAKE DREAMS COME TRUE</span>
           </p>
 
-          <h4 class="h1 hero-title">
+          <h4 class="h1 me-title">
              Helping each other can make world better 
           </h4>
 
-          <p class="hero-text">
+          <p class="me-text">
            We can get knowledge about to connect those in need with those who can help. Nearest tie up ngo will treat them. Dragging people of multiple communities and classes. 
           </p>
 
@@ -802,6 +802,37 @@
         </div>
       </section>
 
+      <div class="dashboard-container">
+        <section id="dashboard" class="dashboard-section">
+            <h2>Upcoming Events</h2>
+            <!-- Display upcoming events here -->
+            <div class="quick-links">
+                <a href="#create-event">Create New Event</a>
+                <a href="#past-events">View Past Events</a>
+                <a href="#manage-volunteers">Manage Volunteers</a>
+                <a href="#track-donations">Track Donations</a>
+            </div>
+        </section>
+    
+        <section id="create-event" class="create-event-section">
+            <h2>Create New Event</h2>
+            <form id="event-form">
+                <!-- Event details input fields -->
+                <input type="text" id="event-name" placeholder="Event Name" required>
+                <textarea id="event-description" placeholder="Event Description" required></textarea>
+                <input type="datetime-local" id="event-date-time" required>
+                <input type="text" id="event-location" placeholder="Event Location" required>
+                <!-- Image upload -->
+                <input type="file" id="event-image" accept="image/*">
+                <!-- Volunteer roles and skills -->
+                <!-- Donation goals and payment methods -->
+                <!-- Social media sharing options -->
+                <button type="submit">Create Event</button>
+            </form>
+        </section>
+    </div>
+    
+    
 
     </article>
   </main>

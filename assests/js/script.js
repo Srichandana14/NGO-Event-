@@ -1,11 +1,4 @@
 'use strict';
-
-
-
-/**
- * navbar toggle
- */
-
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
@@ -18,10 +11,6 @@ for (let i = 0; i < navElemArr.length; i++) {
   });
 }
 
-/**
- * toggle navbar when click any navbar link
- */
-
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
 
 for (let i = 0; i < navbarLinks.length; i++) {
@@ -29,15 +18,6 @@ for (let i = 0; i < navbarLinks.length; i++) {
     navbar.classList.remove("active");
   });
 }
-
-
-
-
-
-/**
- * header active when window scrolled down
- */
-
 const header = document.querySelector("[data-header]");
 
 window.addEventListener("scroll", function () {
